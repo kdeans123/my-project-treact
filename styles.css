@@ -35,6 +35,9 @@ li {
     color: #6415ff;
   }
 
+  .container {
+    padding: 56px 0;
+  }
 
 /* NAVIGATION BAR */
 
@@ -112,6 +115,7 @@ nav {
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -198,5 +202,41 @@ button {
 
 img {
     width: 100%;
+}
+
+/* FEATURES */
+
+#features {
+    position: relative;
+    width: 100vw;
+}
+
+.feature_icon {
+    width: 170%;
+}
+
+.feature {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    text-align: left;
+    width: calc(100%/3);
+}
+
+.features__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.feature__title {
+    text-align: left;
+}
+
+.feature__para {
+    text-align: left;
+}
+
+.feature__description {
+    margin-left: 10px;
 }
 
