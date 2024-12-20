@@ -249,7 +249,7 @@ img {
 /* FEATURES */
 
 #features {
-    padding: 200px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
 
 .feature_icon {
@@ -284,6 +284,12 @@ img {
 
 .feature__para {
     text-align: left;
+    max-width: 250px;
+    margin-top: 16px;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: 500;
+    color: rgb(124, 139, 161);
 }
 
 .feature__description {
@@ -317,7 +323,7 @@ img {
 /* QUALITY */
 
 #quality {
-    padding: 200px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
 
 .section__tag--row, .section__title--row, .section__para--row {
@@ -380,7 +386,7 @@ img {
 /* VALUES */
 
 #values {
-    padding: 200px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
 
 .value__img {
@@ -411,12 +417,22 @@ img {
 
 
 #pricing {
-    padding: 200px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
+
+.plan__stripe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 8px;
+    color: #f7fafc;
+    background: linear-gradient(115deg, rgb(56,178,172));
+}
 
 
 /* TESTIMONIALS */
 
 #testimonials {
-    padding: 200px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
