@@ -375,8 +375,48 @@ img {
 
 /* VALUES */
 
-#values
+#values {
+    height: 100vh;
+    width: 100vw;
+}
 
 .value__img {
-    height: 20%;
+    height: 30px;
+    width: 30px;
+    margin-right: 10px;
+}
+
+.value__title {
+    display: flex;
+}
+
+.values__list {
+    display: flex;
+}
+
+.value__para {
+    font-size: 18px;
+    line-height: 1.25;
+    margin: 32px 0;
+    color: #1a202c;
+    text-align: left;
+}
+
+
+
+/* PRICING */
+
+#pricing {
+    height: 100vh;
+    width: 100vw;
+}
+
+
+
+
+/* TESTIMONIALS */
+
+#testimonials {
+    height: 100vh;
+    width: 100vw;
 }
