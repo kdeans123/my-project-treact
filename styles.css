@@ -258,8 +258,7 @@ img {
 }
 
 .feature {
-    display: flex;
-    justify-content: space-between;
+    display: flex;    /* I removed jcsb - as it adds to much space between the paragraph text and the icon */
     align-items: flex-start;
     text-align: left;
     width: calc(100%/3);
@@ -428,6 +427,10 @@ img {
     height: 8px;
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56,178,172));
+}
+
+.plans__container {
+    display: flex;
 }
 
 
