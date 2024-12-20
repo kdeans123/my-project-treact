@@ -336,16 +336,20 @@ img {
     width: 100vw;
 }
 
+.step {
+    display: flex;
+}
+
 .step__number {
     color: #cbd5e0;
     font-size: 36px;
     font-weight: 600;
     line-height: 1;
+    margin: 0 20px;
 }
 
 .step__decription {
-    margin-top: 12px;
-    margin-left: 0;
+    margin: 20px 6px;
 }
 
 .step__title {
@@ -353,17 +357,26 @@ img {
     font-size: 20px;
     color: #243e63;
     line-height: 1;
+    margin: 12px 10px;
 }
 
 .step__para {
     font-size: 14px;
     color: #718096;
-    margin-top: 12px;
+    margin: 12px 10px;
     font-weight: 500;
     line-height: 2;
 }
 
 .steps__img {
-    height: 80%;
-    width: 80%;
+    height: 70%;
+    width: 70%;
+}
+
+/* VALUES */
+
+#values
+
+.value__img {
+    height: 20%;
 }
