@@ -18,7 +18,7 @@ h1 {
 }
 
 h1, h2, h4 {
-    margin-bottom: 32px;;
+    margin-bottom: 24px;;
 }
 
 p {
@@ -47,6 +47,7 @@ li {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    gap: 20px;       /*this adds space between sections*/
   }
 
   .btn {
@@ -302,8 +303,8 @@ img {
 }
 
 .section__img--wrapper {
-    width: 130%;
-    height: 130%;
+    width: 50%;
+    height: 50%;
 }
 
 .row__narrow {
@@ -326,7 +327,7 @@ img {
 }
 
 .section__para--row {
-    margin-bottom: 15px;
+    margin-bottom: 24px;
 }
 
 /* STEPS */
@@ -369,8 +370,6 @@ img {
 }
 
 .steps__img {
-    height: 70%;
-    width: 70%;
 }
 
 /* VALUES */
