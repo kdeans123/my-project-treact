@@ -591,10 +591,12 @@ img {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 20px 24px;
+    gap: 20px;
 }
 
-.fa-arrow-left {
-    border: none;
+.testimonial__btn {
+    padding: 0 16px;
 }
 
 /* START */
