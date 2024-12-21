@@ -519,5 +519,10 @@ img {
     padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
 
-/* TESTIMONIALS */
+.client__rating {
+    margin-bottom: 8px;
+    color: #fabf28;
+    }
+
+/* START */
 
