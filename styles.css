@@ -56,10 +56,14 @@ li {
     justify-content: space-between;
     margin: 0 auto;
     gap: 20px;       /*this adds space between sections*/
-    flex-wrap: wrap; 
   }
 
   .row {
+    width: 100%;
+    display: flex;
+  }
+
+  .section__left, .section__right {
     width: 50%;
   }
 
@@ -308,9 +312,6 @@ img {
     width: 100%;
 }
 
-.header__image--wrapper {
-    max-width: 500px;
-}
 
 /* FEATURES */
 
@@ -388,7 +389,9 @@ img {
     width: 50%;
     height: 50%;
 }
-
+.section__img{
+    width: 100%;
+}
 .row__narrow {
     margin: 30px 0;
 }
@@ -771,8 +774,7 @@ footer {
 .footer__bottom {
     display: flex;
     justify-content: space-between;
-    align-content: center;
-}
+    }
 
 .footer__logo {
     display: flex;
@@ -848,4 +850,10 @@ footer {
     .btn__menu {
         display: flex;    /*   so the burger is displayed on smaller screens  */
     }
+
+    .container {
+        justify-content: center;
+        flex-direction: column;
+    }
+ 
 }
