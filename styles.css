@@ -726,6 +726,11 @@ footer {
 
 .footer__column--link {
     margin-top: 24px;
+    transition: all 300ms;
+}
+
+.footer__column--link:hover {
+    text-decoration: underline;
 }
 
 .social__icon {
