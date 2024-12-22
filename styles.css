@@ -219,6 +219,8 @@ btn__menu:hover {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 .header__description {
@@ -297,6 +299,8 @@ button {
 .header__customers--img {
     margin-top: 26px;
     opacity: 0.5;
+    width: 100%;
+    max-width: 550px;
 }
 
 img {
