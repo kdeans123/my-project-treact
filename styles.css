@@ -56,6 +56,7 @@ li {
     justify-content: space-between;
     margin: 0 auto;
     gap: 20px;       /*this adds space between sections*/
+    flex-wrap: wrap; 
   }
 
   .row {
@@ -206,7 +207,7 @@ btn__menu:hover {
 
 /* HEADER */
 #header {
-    height: 100vh;
+    min-height: 100vh;   /*  if the header needs more space - adding min height will create this space  */
     width: 100vw;
 }
 
@@ -305,11 +306,9 @@ button {
 
 img {
     width: 100%;
-    max-width: 500px;
 }
 
 .header__image--wrapper {
-    width: 100%;
     max-width: 500px;
 }
 
@@ -328,12 +327,16 @@ img {
     display: flex;    /* I removed jcsb - as it adds too much space between the paragraph text and the icon */
     align-items: flex-start;
     text-align: left;
-    width: calc(100%/3);
+    max-width: 350px;  /* instead of width: calc(100%/3); we want to use this as it allows wrapping function  */
+    align-items: center;
 }
 
 .features__wrapper {
     display: flex;
     flex-wrap: wrap;
+    margin: auto 0;
+    align-items: center;
+    justify-content:center;
 }
 
 .section__title {
@@ -497,11 +500,14 @@ img {
     height: 8px;
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(56,178,172));
+    flex-wrap: wrap;
+    flex-direction: column;
 }
 
 .plans__container {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .plan__name {
@@ -693,6 +699,7 @@ img {
     justify-content: space-between;
     margin: 0 auto;
     gap: 20px;       /*this adds space between sections*/
+    flex-wrap: wrap;
       }
 
 .start__row {
@@ -793,10 +800,19 @@ footer {
     text-decoration: underline;
 }
 
-.social__icon {
+.social__link {
     border-radius: 50%; /* so the image changes into round  */
-    height: 30px;
-    width: 30px;
+    border: none;
+    margin-left: 16px;
+    padding: 8px;
+    cursor: pointer;
+    transition: all 300ms ease;
+}
+
+.footer__socials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .footer__copyright {
