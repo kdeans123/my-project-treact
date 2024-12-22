@@ -116,7 +116,7 @@ nav {
 }
 
 .nav__link--anchor {
-    color: #243e63;
+    color: #640461;
     font-weight: 600;
     font-size: 14px;
 }
@@ -134,8 +134,8 @@ nav {
 }
 
 .nav__link--anchor-primary:hover {
-    background-color: #243e63;
-    color: #243e63;
+    background-color: rgb(80, 17, 204);
+    color: #6415ff;
 }
 
 .navigation__logo {
