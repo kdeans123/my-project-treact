@@ -161,6 +161,7 @@ nav {
     font-size: 40px;
     text-align: center;
     border: none;
+    display:none;
 }
 
 btn__menu:hover {
@@ -817,3 +818,8 @@ footer {
     .nav__link--list {
         display: none;
     }
+
+    .btn__menu {
+        display: flex;    /*   so the burger is displayed on smaller screens  */
+    }
+}
