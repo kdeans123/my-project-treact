@@ -40,7 +40,7 @@ li {
   }
 
 .white {
-    color: white;
+    color: white !important;
 }
 
 .gray {
@@ -152,6 +152,54 @@ nav {
 .logo__text {
     font-size: 24px;
     font-weight: bold;
+}
+
+/*  HAMBURGER MENU   */
+
+.btn__menu {
+    background-color: transparent;
+    font-size: 40px;
+    text-align: center;
+    border: none;
+}
+
+btn__menu:hover {
+    color: #6415ff;
+}
+
+.menu__backdrop {
+    position: absolute;  /*  other elements are not moved to different position, the elements of the resonsive menu is on top  */
+    background-color: #fff;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50vh;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.menu--open .menu__backdrop {
+    display: flex;
+}
+
+.btn__menu--close {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    padding: 8px;
+}
+
+.menu__links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.menu__list {
+    padding: 16px 0;
 }
 
 
@@ -664,6 +712,7 @@ img {
 
 .contact__btn {
     height: 60px;
+    border: 1px solid white;
 }
 
 .start__btn:hover {
@@ -750,3 +799,21 @@ footer {
     margin: 64px 0;
     background: rgb(116, 44, 255);
 }
+
+
+
+
+/* for smartphones, tablets */
+
+@media (max-width: 768px) {
+    nav {
+        height: 68px;
+    }
+
+    h1 {
+        font-size: 28px;
+    }
+
+    .nav__link--list {
+        display: none;
+    }
