@@ -627,7 +627,7 @@ img {
 .start__container {
     border-radius: 5px;
     border: none;
-    background: linear-gradient(135deg, rgb(76, 81, 191) 0%, rgb(102, 126, 234) 100%);
+    background-color:  rgb(100, 21, 255);
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -683,10 +683,25 @@ img {
     padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
     }
 
+footer {
+    background-color: rgb(100, 21, 255);
+    color: white;
+    }
+    
+.footer__row {
+    width: 100%;
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
 .footer__columns {
     display: flex;
     justify-content: space-around;
     width: 100%;
     flex-wrap: wrap;
     margin-bottom: 20px;
+}
+
+footer__socials. {
+
 }
