@@ -690,6 +690,7 @@ footer {
     width: 100%;   /*  It fills the spacing, the gap so I can achieve spaces between columns without margin auto zero */
     max-width: 1280px;
     margin: 0 auto;
+    padding: 100px 20px;
 }
 
 .footer__columns {
@@ -731,4 +732,16 @@ footer {
     border-radius: 50%; /* so the image changes into round  */
     height: 30px;
     width: 30px;
+}
+
+.footer__copyright {
+    margin-top: 15px;
+    color: #d7dce4;
+}
+
+.footer__divider {
+    width: 100%;
+    height: 2px;
+    margin: 64px 0;
+    background: rgb(116, 44, 255);
 }
