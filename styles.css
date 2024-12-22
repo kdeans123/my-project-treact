@@ -47,7 +47,7 @@ li {
     color: rgb(124, 139, 161);
 }
 
-  .container {
+  .container {   /*  I added all the properties that normally should be added to the row class  */ 
     width: 100%;
     max-width: 1200px;
     padding: 0 24px;
@@ -550,6 +550,12 @@ img {
     color: #fabf28;
     }
 
+.testimonial__profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 .testimonials__description {
     width: 50%;   /*  so that the section is equally divaded into two and image is of the right size   */
 }
@@ -604,6 +610,8 @@ img {
     border: none;  /* no border */
     border-radius: 9999px; /* make the border circular */
     transition: all 300ms ease;
+    color: #6415ff;
+    font-weight: bold;
   }
 
 .testimonial__btn:hover {
@@ -611,6 +619,10 @@ img {
 }
 
 /* START */
+
+#start {
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    }
 
 .start__container {
     border-radius: 5px;
@@ -665,3 +677,16 @@ img {
     color: rgb(80, 17, 204);
 }
 
+/* FOOTER */
+
+#footer {
+    padding: 70px 0px;   /* instead of height: 100vh and width 100vw - as these may cause problems with responsiveness   */
+    }
+
+.footer__columns {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+}
