@@ -305,6 +305,12 @@ button {
 
 img {
     width: 100%;
+    max-width: 500px;
+}
+
+.header__image--wrapper {
+    width: 100%;
+    max-width: 500px;
 }
 
 /* FEATURES */
@@ -319,7 +325,7 @@ img {
 }
 
 .feature {
-    display: flex;    /* I removed jcsb - as it adds to much space between the paragraph text and the icon */
+    display: flex;    /* I removed jcsb - as it adds too much space between the paragraph text and the icon */
     align-items: flex-start;
     text-align: left;
     width: calc(100%/3);
