@@ -1,7 +1,7 @@
-@import url('https://fonts.gstatic.com/s/montserrat/v29/JTUSjIg1_i6t8kCHKm459WRhyzbi.woff2');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 * {
-    font-family: 'Montserrat';
+    font-family: 'Inter';
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -55,7 +55,7 @@ li {
     align-items: center;
     justify-content: space-between;
     margin: 0 auto;
-    gap: 20px;       /*this adds space between sections*/
+    gap: 40px;       /*this adds space between sections*/
   }
 
   .row {
@@ -178,7 +178,7 @@ nav {
     display:none;
 }
 
-btn__menu:hover {
+.btn__menu:hover {
     color: #6415ff;
 }
 
@@ -220,7 +220,7 @@ btn__menu:hover {
 
 /* HEADER */
 #header {
-    min-height: 100vh;   /*  if the header needs more space - adding min height will create this space  */
+  /*  if the header needs more space - adding min height will create this space  */
     width: 100vw;
 }
 
@@ -253,7 +253,7 @@ h1 {
     font-size: 18px;
     line-height: 1.25;
     margin: 32px 0;
-    color: #1a202c;
+    color: #243E63;
     text-align: left;
 }
 
@@ -337,7 +337,6 @@ img {
     align-items: flex-start;
     text-align: left;
     max-width: 350px;  /* instead of width: calc(100%/3); we want to use this as it allows wrapping function  */
-    align-items: center;
 }
 
 .features__wrapper {
@@ -350,6 +349,10 @@ img {
 
 .section__title {
     text-align: center;
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.5;
+    margin: 16px 0;
 }
 
 .section__tag {
@@ -390,6 +393,10 @@ img {
 }
 
 .section__para {
+    font-size: 14px;
+}
+
+.section__para {
     color: rgb(124, 139, 161);
 }
 
@@ -416,8 +423,15 @@ img {
     width: 80%;
 }
 
+.section__title--row {
+    font-size: 36px;
+    font-weight: 900;
+}
+
 .section__para--row {
     margin-bottom: 24px;
+    font-size: 14px;
+    color: #7C8BA1;
 }
 
 /* STEPS */
@@ -515,8 +529,8 @@ img {
 
 .plans__container {
     display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
 }
 
 .plan__name {
@@ -558,7 +572,10 @@ img {
 }
 
 .plan__column {   /* this add a stripe on top of the column   */
-    width: calc(90%/3);
+    width: 100%;
+    max-width: 344px;
+
+    
 }
 
 .plan__personal {
@@ -697,12 +714,12 @@ img {
     }
 
 .start__container {
+    padding: 96px 0;
     border-radius: 5px;
     border: none;
     background-color:  rgb(100, 21, 255);
     width: 100%;
     max-width: 1200px;
-    padding: 0 24px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -712,14 +729,18 @@ img {
       }
 
 .start__row {
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1024px;
     display: flex;
+    padding: 0 32px;
+    justify-content: center;
 }
 
 .start__title {
     font-size: 30px;
     font-weight: 700;
     line-height: 1.5;
-    padding: 100px 20px;
 }
 
 .start__btns {
@@ -792,6 +813,11 @@ footer {
     width: 100%;
     max-width: 50px;
     padding: 7px;
+}
+
+.footer__column {
+    margin: 48px 0 0;
+    padding: 0 16px;
 }
 
 .footer__column--title {
@@ -875,6 +901,7 @@ footer {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
+        gap: 64px;
       }
 
     .section__right {
@@ -883,7 +910,7 @@ footer {
         display: flex;
     }
 
-    .testimonials__description {
+    .testimonials__description, .section__tag--row, .testimonial__title {
         width: 100%;
         text-align: center;
     }
@@ -893,16 +920,40 @@ footer {
         flex-direction: column;
         align-items: center;
         justify-content: flex-end;
+        gap: 20px;
     }
 
     .start__btns {
         padding-bottom: 50px;
     }
 
-    .start__title {
+    .start__title, .section__title--row, .section__para--row {
         text-align: center;
     }
 
+
+    .section__left {
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+  
     
  
+}
+
+
+
+@media (max-width: 1024px) {
+    .plans__container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 640px) {
+    .start__btns {
+        flex-direction: column;
+    }
 }
